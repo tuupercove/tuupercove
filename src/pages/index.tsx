@@ -1,6 +1,10 @@
 //import Image from "next/image";
 //import localFont from "next/font/local";
-import Link from "next/link"
+import {Link} from "@nextui-org/react"
+
+// Component
+import Breadcrumb from "@/Components/Breadcrumb"
+
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -16,9 +20,10 @@ import Link from "next/link"
 export default function Home() {
   return (
     <div>
-      <p>hello world</p>
-      <Link href="/about">
-        Nextpage
+      <Breadcrumb />
+      <p>หน้าทดสอบเพี่อสะดวกในการพัฒนา TuuperCove</p>
+      <Link href="about">
+        หน้าต่อไป
       </Link>
     </div>
   );
