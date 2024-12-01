@@ -9,6 +9,7 @@
     pkgs.yarn
     pkgs.nodePackages.pnpm
     pkgs.bun
+    pkgs.ffmpeg_7-full
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -20,7 +21,7 @@
     workspace = {
       #Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
-        npm-install = "bun ci --no-audit --prefer-offline --no-progress --timing";
+        npm-install = "npm ci --no-audit --prefer-offline --no-progress --timing";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [
           # Cover all the variations of language, src-dir, router (app/pages)
