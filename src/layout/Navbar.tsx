@@ -24,31 +24,35 @@ export default function NavbarRoot() {
             <NavbarContent className="sm:flex gap-4"  justify="center">
                 <NavbarItem isActive>
                     <Link href="/" aria-current="page">
+                        <i className="fa-solid fa-house"></i>
+                         
                         Home
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/lead">
+                        <i class="fa-solid fa-chess-board"></i>
+                         
                         Leaderboard
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/talent">
                         Vtubers
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/affiliate">
                         Affiliate
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/donate">
                         Support me :D
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/contact">
                         Contact Us
                     </Link>
                 </NavbarItem>

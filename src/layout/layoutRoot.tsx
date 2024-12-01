@@ -1,4 +1,5 @@
 import NavbarRoot from '@/layout/Navbar'
+import FooterRoot from './Footer'
 
 export default function LayoutRoot({
   children,
@@ -9,6 +10,7 @@ export default function LayoutRoot({
         <div>
             <NavbarRoot />
             {children}
+            <FooterRoot />
         </div>
     )
 }

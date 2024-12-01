@@ -21,6 +21,11 @@ body {
 }
 */
 
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(47deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
 .gl {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
@@ -29,4 +34,13 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center; */
 }
